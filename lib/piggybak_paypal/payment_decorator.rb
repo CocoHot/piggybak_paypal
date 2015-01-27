@@ -6,7 +6,7 @@ module PiggybakPaypal
       attr_accessor :token
       attr_accessor :payer_id
 
-      attr_accessible :token, :payer_id
+      include ActiveModel::ForbiddenAttributesProtection
 
       before_validation :set_defaults, :on => :create
 
