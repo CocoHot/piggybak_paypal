@@ -23,8 +23,8 @@ module PiggybakPaypal
       @order.create_payment_shipment
       @cart.set_extra_data(details[:shipping_address_attributes])
       @shipping_options = shipping_methods = Piggybak::ShippingMethod.lookup_methods(@cart)
-      @token = paypal_token_param
-      @payer_id = paypal_payer_param
+      @token = params[:token]
+      @payer_id = params[:payer_id]
     end
 
     def set_payment_method
@@ -32,6 +32,7 @@ module PiggybakPaypal
       @payment_method = Piggybak::PaymentMethod.where(klass: "::PiggybakPaypal::PaymentCalculator::Paypal").first()
     end
 
+=begin
   private
     def paypal_token_param
       params.require(:token)
@@ -40,6 +41,7 @@ module PiggybakPaypal
     def paypal_payer_param
       params.require(:payer_id)
     end
+=end
 
   end
 end
