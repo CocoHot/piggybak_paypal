@@ -24,7 +24,7 @@ module PiggybakPaypal
       @cart.set_extra_data(details[:shipping_address_attributes])
       @shipping_options = shipping_methods = Piggybak::ShippingMethod.lookup_methods(@cart)
       @token = params[:token]
-      @payer_id = params[:payer_id]
+      @payer_id = params[:payerID]
     end
 
     def set_payment_method
