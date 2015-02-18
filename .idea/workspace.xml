@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d971c754-fb07-476c-af20-68a58b2ad095" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/piggybak_paypal/payment_decorator.rb" afterPath="$PROJECT_DIR$/lib/piggybak_paypal/payment_decorator.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/piggybak_paypal/version.rb" afterPath="$PROJECT_DIR$/lib/piggybak_paypal/version.rb" />
     </list>
     <ignored path="piggybak_paypal.iws" />
@@ -28,8 +29,8 @@
       <file leaf-file-name="payment_decorator.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/piggybak_paypal/payment_decorator.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1474">
-              <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1451">
+              <caret line="33" column="123" selection-start-line="33" selection-start-column="123" selection-end-line="33" selection-end-column="123" />
               <folding />
             </state>
           </provider>
@@ -716,8 +717,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/piggybak_paypal/payment_decorator.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1474">
-          <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1451">
+          <caret line="33" column="123" selection-start-line="33" selection-start-column="123" selection-end-line="33" selection-end-column="123" />
           <folding />
         </state>
       </provider>
