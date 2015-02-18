@@ -14,7 +14,7 @@ module PiggybakPaypal
         )
         redirect_to url
       end
-    endv
+    end
 
     def process_express
       calculator = ::PiggybakPaypal::PaymentCalculator::Paypal.new(@payment_method)
