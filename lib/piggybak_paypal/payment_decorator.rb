@@ -28,15 +28,13 @@ module PiggybakPaypal
           ActiveMerchant::Billing::Base.mode = Piggybak.config.activemerchant_mode
 
           calculator = ::PiggybakPaypal::PaymentCalculator::Paypal.new(self.payment_method)
-          Rails.logger.debug("self.payment_method = #{self.payment_method}")
           self.month = Time.now.month
           self.year = Time.now.year
-        Rails.logger.debug("Test JSON string: #{params[:order][:line_items_attributes]["1"][:payment_attributes][:token]}")
           Rails.logger.debug("PayerID = #{self.payer_id}, Token = #{self.token}")
           order_total = (order.total_due * 100).to_i
           res = calculator.gateway.purchase(order_total,{
             :ip => order.ip_address, 
-            :token => self.token,
+            :token => order.token,
             :payer_id => self.payer_id}
           )
 

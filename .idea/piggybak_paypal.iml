@@ -127,7 +127,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
-      <library name="piggybak_paypal (v0.0.2, /Users/kevin/Dropbox/Project/piggybak_paypal) [path][gem]">
+      <library name="piggybak_paypal (v1.0.1, /Users/kevin/Dropbox/Project/piggybak_paypal) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/app" />
           <root url="file://$MODULE_DIR$/lib" />
