@@ -25,6 +25,7 @@ module PiggybakPaypal
       @shipping_options = shipping_methods = Piggybak::ShippingMethod.lookup_methods(@cart)
       @token = paypal_token_param
       @payer_id = paypal_payer_param
+      Rails.logger.debug("[This is in controller] PayerID = #{self.payer_id}, Token = #{self.token}")
     end
 
     def set_payment_method

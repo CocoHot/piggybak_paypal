@@ -35,7 +35,7 @@ module PiggybakPaypal
           order_total = (order.total_due * 100).to_i
           res = calculator.gateway.purchase(order_total,{
             :ip => order.ip_address, 
-            :token => self.token, 
+            :token => self.token,
             :payer_id => self.payer_id}
           )
 
