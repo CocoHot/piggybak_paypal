@@ -35,7 +35,7 @@ module PiggybakPaypal
           res = calculator.gateway.purchase(order_total,{
             :ip => order.ip_address, 
             :token => order.token,
-            :payer_id => self.payer_id}
+            :payer_id => order.payer_id}
           )
 
         if res.success?
