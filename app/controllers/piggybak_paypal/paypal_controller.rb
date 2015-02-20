@@ -12,6 +12,7 @@ module PiggybakPaypal
           return_url: paypal_process_url,
           cancel_url: "http://#{request.host}"
         )
+        Rails.logger.debug "CHECK ip_addres type: #{request.remote_ip}"
         redirect_to url
       end
     end
